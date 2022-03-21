@@ -4,10 +4,26 @@
  */
 package numeros;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Ángel.García
  */
 public class Cola {
+     
+    ArrayList cola;
+    
+    public Cola(){
+        this.cola=new ArrayList();
+        
+    }
+    
+    public void nuevoCliente(String nombre){
+        
+        Cliente a= new Cliente(nombre);
+        this.cola.add(a);
+    }
+    
     
 }
